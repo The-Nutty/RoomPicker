@@ -6,7 +6,7 @@
 </head>
 <body>
 <p th:if="${done != null}" th:text="$[done}"></p>
-<form role="form" data-toggle="validator" th:action="@{/new}"
+<form role="form" data-toggle="validator" th:action="@{/}"
       th:object="${roomForm}"
       method="post">
 

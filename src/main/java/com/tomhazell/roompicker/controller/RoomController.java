@@ -44,7 +44,7 @@ public class RoomController {
         room.setRandomNum(random.nextInt());
 
         roomRespository.save(room);
-        model.addAttribute("done", "done");
+        model.addAttribute("done", "go to https://roompicker.herokuapp.com/rooms to view all numbers");
         return new ModelAndView("new_room");
     }
 
