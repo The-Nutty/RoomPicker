@@ -14,17 +14,17 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'spring-boot'
 apply plugin: 'idea'
-apply plugin: 'war'
+//apply plugin: 'war'
 
 jar {
-	baseName = 'Room Picker'
-	version = '0.0.1-SNAPSHOT'
+	baseName = 'roompicker'
+	version = '0.0.1'
 }
-
-war {
-    baseName = 'Room Picker'
-    version = '0.0.1'
-}
+//
+//war {
+//    baseName = 'Room Picker'
+//    version = '0.0.1'
+//}
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
