@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>New Room</title>
+</head>
+<body>
+<p th:if="${done != null}" th:text="$[done}"></p>
+<form role="form" data-toggle="validator" th:action="@{/new}"
+      th:object="${roomForm}"
+      method="post">
+
+    <label for="name">Name*</label>
+    <input class="form-control" type="text" id="name" data-error="Name not valid"
+           placeholder="Name"
+           th:field="*{name}" required="required"/>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Get Room</button>
+</form>
+
+</body>
+</html>

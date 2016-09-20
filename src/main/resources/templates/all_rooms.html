@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>All Rooms</title>
+</head>
+<body>
+<table>
+    <thead>
+    <th>Name</th>
+    <th>Number</th>
+    <th>IP</th>
+    </thead>
+    <tbody>
+    <tr th:each="row : ${rows}">
+        <td th:text="${row.name}"></td>
+        <td th:text="${row.randomNum}"></td>
+        <td th:text="${row.IP}"></td>
+    </tr>
+    </tbody>
+
+</table>
+</body>
+</html>
